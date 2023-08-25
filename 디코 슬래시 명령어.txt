@@ -35,5 +35,3 @@ client.run('토큰')
 @tree.command(name = '안녕', description='슬래시 설명문') 
 async def slash2(interaction: discord.Interaction):
     await interaction.response.send_message(f"슬래시 커맨드", ephemeral = True) 
-
-이 명령어를 수정하고 여러개 쓰면 됩니다
