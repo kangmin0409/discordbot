@@ -49,8 +49,7 @@ async def slash3(interaction: discord.Interaction, *, location: str):
 
 @tree.error
 async def slash3(ctx,error):
-    await ctx.response.send_message(f"장소를 지정해주세요!", ephemeral = True)
-    await ctx.response.send_message(f"예시: /날씨 Seoul,KR", ephemeral = True)
+    await ctx.response.send_message(f"오류가 발생했습니다!", ephemeral = True)
 
 
 client.run('token')
