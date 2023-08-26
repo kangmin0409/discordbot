@@ -43,7 +43,7 @@ async def slash3(interaction: discord.Interaction, *, location: str):
                   f'습도: {humidity}%\n' \
                   f'풍속: {wind_speed} m/s'
     else:
-        message = f'{location}의 날씨 정보를 가져오지 못했습니다.'
+        message = f'{location}의 날씨 정보를 가져오지 못했습니다. 영어만 지원합니다.'
 
     await interaction.response.send_message(message, ephemeral = False)
 
