@@ -24,7 +24,7 @@ tree = app_commands.CommandTree(client)
 
 @tree.command(name = '안녕', description='슬래시 설명문') 
 async def slash2(interaction: discord.Interaction):
-    await interaction.response.send_message(f"슬래시 커맨드", ephemeral = True) 
+    await interaction.response.send_message(f"슬래시 커맨드", ephemeral = True) #ephemeral은 나만 볼 수 있는지 여부
 
 
 client.run('토큰')
