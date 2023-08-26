@@ -1,7 +1,7 @@
 import openai
 
 # API 키 설정
-openai.api_key = '<youtapikey>'
+openai.api_key = '<youtapikey>' #chatgpt 웹에서 발급 가능
 
 # ChatGPT에 요청 보내기
 response = openai.Completion.create(
